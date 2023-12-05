@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.1),
-    on Thu Oct  5 13:02:51 2023
+    on Mon Dec  4 19:41:21 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -325,7 +325,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "instructions" ---
     text_5 = visual.TextStim(win=win, name='text_5',
-        text='During this experiment you will see an initial set of words, your task is to remember these words. Afterwards there will be more words that appear and if you recognize any words from the previous list, you will press the f key, if it looks like a new word then press the j key.\n\nPress the enter/return key when you have finished reading the instuctions.',
+        text="In this experiment, you will be presented with an initial set of words, and your objective is to memorize these words. Following that, additional words will be introduced, and your task is to distinguish between words you recall from the initial set. If a word is recognized from the original list, press the 'f' key; if it appears to be a new word, press the 'j' key.\n\nThe task will repeat with a new set of words, follow the same instructions.\n\nPress the enter/return key when you have finished reading the instuctions.",
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='black', colorSpace='rgb', opacity=None, 
@@ -379,7 +379,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         text='Thank you for participating in the experiment.\nThis window will close automatically.',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color='black', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     
@@ -961,7 +961,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "ready" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 3.0:
+        while continueRoutine and routineTimer.getTime() < 4.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -992,7 +992,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # if text_2 is stopping this frame...
             if text_2.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text_2.tStartRefresh + 3.0-frameTolerance:
+                if tThisFlipGlobal > text_2.tStartRefresh + 4.0-frameTolerance:
                     # keep track of stop time/frame for later
                     text_2.tStop = t  # not accounting for scr refresh
                     text_2.frameNStop = frameN  # exact frame index
@@ -1032,7 +1032,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-3.000000)
+            routineTimer.addTime(-4.000000)
         
         # set up handler to look after randomisation of conditions etc
         recognition_loop = data.TrialHandler(nReps=1.0, method='random', 
@@ -1218,7 +1218,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "blankk" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 2.0:
+        while continueRoutine and routineTimer.getTime() < 3.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1226,7 +1226,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             # is it time to end the Routine? (based on local clock)
-            if tThisFlip > 2.0-frameTolerance:
+            if tThisFlip > 3.0-frameTolerance:
                 continueRoutine = False
             
             # check for quit (typically the Esc key)
@@ -1259,7 +1259,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-2.000000)
+            routineTimer.addTime(-3.000000)
         thisExp.nextEntry()
         
         if thisSession is not None:
